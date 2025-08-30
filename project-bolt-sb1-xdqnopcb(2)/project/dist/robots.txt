@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://silly-otter-2e6a50.netlify.app/sitemap.xml
+
+# Disallow admin pages
+Disallow: /admin/

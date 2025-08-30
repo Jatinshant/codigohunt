@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Preload critical resources -->
+    <link rel="preload" href="/src/main.tsx" as="script" />
+    <link rel="preload" href="/src/index.css" as="style" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Codigohunt Solutions - Premier IT Consultancy & Services. Expert DevOps, Cloud, and Development Solutions delivering high-performance, scalable, and secure digital solutions globally." />
+    <meta name="keywords" content="IT Consultancy, DevOps, Cloud Services, Web Development, Cybersecurity, ERP Solutions, Digital Marketing, App Development, Custom Software, IT Support, Jaipur IT Company, AWS Cloud, DevSecOps" />
+    <meta name="author" content="Codigohunt Solutions" />
+    <meta name="robots" content="index, follow" />
+    <title>Codigohunt Solutions - Premier IT Consultancy & Services | DevOps, Cloud & Development Experts</title>
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Codigohunt Solutions - Premier IT Consultancy & Services" />
+    <meta property="og:description" content="Premier IT consultancy and services firm delivering high-performance, scalable, and secure digital solutions globally. Expert DevOps, Cloud, and Development Solutions." />
+    <meta property="og:image" content="https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg?auto=compress&cs=tinysrgb&w=1200" />
+    <meta property="og:url" content="https://silly-otter-2e6a50.netlify.app" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Codigohunt Solutions" />
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Codigohunt Solutions - Premier IT Consultancy & Services" />
+    <meta name="twitter:description" content="Premier IT consultancy and services firm delivering high-performance, scalable, and secure digital solutions globally." />
+    <meta name="twitter:image" content="https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg?auto=compress&cs=tinysrgb&w=1200" />
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://silly-otter-2e6a50.netlify.app" />
+    
+    <!-- Theme Color -->
+    <meta name="theme-color" content="#FF00FF" />
+    
+    <!-- Critical CSS inline for faster FCP -->
+    <style>
+      /* Critical above-the-fold styles */
+      body {
+        margin: 0;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        background-color: #ffffff;
+        color: #1a1a1a;
+      }
+      
+      .dark body {
+        background-color: #0f0f0f;
+        color: #ffffff;
+      }
+      
+      /* Loading spinner for initial render */
+      .loading-spinner {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 40px;
+        height: 40px;
+        border: 3px solid #f3f3f3;
+        border-top: 3px solid #FF00FF;
+        border-radius: 50%;
+        animation: spin 1s linear infinite;
+        z-index: 9999;
+      }
+      
+      @keyframes spin {
+        0% { transform: translate(-50%, -50%) rotate(0deg); }
+        100% { transform: translate(-50%, -50%) rotate(360deg); }
+      }
+      
+      /* Hide spinner when app loads */
+      .app-loaded .loading-spinner {
+        display: none;
+      }
+      
+      /* Critical hero section styles */
+      .hero-section {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(135deg, rgba(255, 0, 255, 0.1) 0%, rgba(0, 127, 255, 0.1) 50%, rgba(176, 224, 230, 0.1) 100%);
+      }
+    </style>
+    
+    <!-- Schema.org markup for Organization -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Codigohunt Solutions",
+      "description": "Premier IT consultancy and services firm delivering high-performance, scalable, and secure digital solutions globally.",
+      "url": "https://silly-otter-2e6a50.netlify.app",
+      "logo": "https://silly-otter-2e6a50.netlify.app/vite.svg",
+      "telephone": "+91-9461232921",
+      "email": "official@codigohunt.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "CBC 13 First Floor, Vikramaditya Marg",
+        "addressLocality": "Jaipur",
+        "addressRegion": "Rajasthan",
+        "addressCountry": "India"
+      },
+      "founder": [
+        {
+          "@type": "Person",
+          "name": "Ankit Sharma",
+          "jobTitle": "DevOps Engineer & Development Expert"
+        },
+        {
+          "@type": "Person", 
+          "name": "Akshay Gupta",
+          "jobTitle": "Cloud, DevOps & DevSecOps Expert"
+        },
+        {
+          "@type": "Person",
+          "name": "Vaibhav Patidar", 
+          "jobTitle": "DevOps and IT Services & Support Expert"
+        }
+      ],
+      "sameAs": [
+        "https://wa.me/919461232921"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+91-9461232921",
+        "contactType": "customer service",
+        "availableLanguage": "English"
+      },
+      "areaServed": "Worldwide",
+      "serviceType": [
+        "DevOps Consulting",
+        "Cloud Services", 
+        "Web Development",
+        "Mobile App Development",
+        "Cybersecurity",
+        "Digital Marketing",
+        "ERP Solutions",
+        "Custom Software Development",
+        "IT Support"
+      ]
+    }
+    </script>
+  </head>
+  <body>
+    <!-- Loading spinner for initial render -->
+    <div class="loading-spinner"></div>
+    
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    
+    <!-- Remove loading spinner when app loads -->
+    <script>
+      window.addEventListener('load', function() {
+        document.body.classList.add('app-loaded');
+      });
+    </script>
+  </body>
+</html>
